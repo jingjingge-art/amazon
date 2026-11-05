@@ -16,6 +16,7 @@ SOURCES = (
     "https://raw.githubusercontent.com/YanG-1989/m3u/refs/heads/main/Migu.m3u",
     "https://raw.githubusercontent.com/jingjingge-art/tvmalay/refs/heads/main/8tv.txt",
     "https://raw.githubusercontent.com/jingjingge-art/youtube/refs/heads/main/%E6%B1%9F%E8%8B%8F%E9%A2%91%E9%81%93.txt",
+    "https://live.yang-1989.eu.org/Live.m3u",
 )
 OUTPUT = Path(__file__).resolve().parents[1] / "iptv.txt"
 GROUP_RE = re.compile(
