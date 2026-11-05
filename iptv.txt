@@ -116,8 +116,6 @@ CGTN阿语,https://0472.org/hls/cgtna.m3u8
 新疆卫视,http://218.84.12.186:8001/hls/main/playlist.m3u8?zxinjd;http://218.84.12.186:8001/hls/main/playlist.m3u8zxinjd
 延边卫视,https://srs.iyb983.cn/video/CYS/index.m3u8
 浙江卫视,http://ali-xwl.cztv.com/live/channel011080Plxw.m3u8
-安多卫视,https://liveout.xntv.tv/a65jur/96iln2.m3u8
-东方卫视,http://bp-resource-dfl.bestv.cn/148/3/video.m3u8
 大湾区卫视,http://222.128.55.152:9080/live/dwq.m3u8
 黑龙江卫视,https://idclive.hljtv.com:4430/live/hljws_own.m3u8
 内蒙古卫视,http://play1-qk.nmtv.cn/live/1769652018126032.m3u8
@@ -381,10 +379,6 @@ CHC电影,http://183.237.95.108:9901/tsfile/live/1008_1.m3u8?key=txiptv&playlive
 缙云综合,http://l.cztvcloud.com/channels/lantian/SXjinyun1/720p.m3u8?zzhed?
 舒兰新闻综合,http://stream8.jlntv.cn/shulan/sd/live.m3u8?_upt=332db6421699196585
 苍南新闻综合,https://l.cztvcloud.com/channels/lantian/SXcangnan1/720p.m3u8
-苏州文化生活,https://live-auth.51kandianshi.com/szgd/csztv3.m3u8
-苏州新闻综合,https://live-auth.51kandianshi.com/szgd/csztv1.m3u8
-苏州生活资讯,https://live-auth.51kandianshi.com/szgd/csztv5.m3u8
-苏州社会经济,https://live-auth.51kandianshi.com/szgd/csztv2.m3u8
 荆门新闻综合,https://stream.jmtv.com.cn/xwzh/playlist.m3u8?_upt=3e28e7271664278691
 荥经综合,https://m3u8channel-yj.yunxya.com/nmip-media/channellive/channel101140/playlist.m3u8
 荥阳综合,http://tvpull.dxhmt.cn:9081/tv/10182-1.m3u8
@@ -497,8 +491,6 @@ AMC音乐,https://AMChls.wns.live/hls/stream.m3u8
 2018年春晚,https://alimov2.a.kwimgs.com/upic/2023/01/06/16/BMjAyMzAxMDYxNjMxMTRfNDAzMDAxOTlfOTI4OTY2ODE2MTBfMF8z_b_B11a778e34390a21de42d407e94f45b91.mp4
 2024年春晚,https://p2.bdstatic.com/rtmp.liveshow.lss-user.baidubce.com/live/stream_bduid_6488563992_8982723413/merged_1707497046297_88536_25144_41936.m3u8
 2025年春晚,https://svip.high24-playback.com/20250129/17159_7bca93c4/2000k/hls/mixed.m3u8
-更新时间,#genre#
-2026-11-05 12:27:00,https://vd2.bdstatic.com/mda-sctj0f6r4u1bpebc/1080p/cae_h264/1774706523506678171/mda-sctj0f6r4u1bpebc.mp4
 •其他「运营商」,#genre#
 Github「使用说明」,https://raw.githubusercontent.com/YanG-1989/m3u/refs/heads/main/hosts.txt
 •咪咕「移动」,#genre#
@@ -544,3 +536,38 @@ Github「使用说明」,https://raw.githubusercontent.com/YanG-1989/m3u/refs/he
 咪咕直播 𝟛𝟜「移动」,http://gslbserv.itv.cmvideo.cn/index.m3u8?channel-id=FifastbLive&Contentid=3000000020000011520&livemode=1&stbId=YanG-1989
 咪咕直播 𝟛𝟝「移动」,http://gslbserv.itv.cmvideo.cn/index.m3u8?channel-id=FifastbLive&Contentid=3000000020000011521&livemode=1&stbId=YanG-1989
 咪咕直播 𝟛𝟞「移动」,http://gslbserv.itv.cmvideo.cn/index.m3u8?channel-id=FifastbLive&Contentid=3000000020000011522&livemode=1&stbId=YanG-1989
+马来西亚频道,#genre#
+8tv,https://2bfd741e.b-cdn.net/streamer/8pQTNs9MHm8GJxtGbMGANaFsfetEtr1Qb8g5geHFvk2b.m3u8?expires=1793869026&token=bB0z-YlLcNheRPLEBvsmrGLBiNJgxUD-ltBTW6g7kBc
+江苏频道,#genre#
+南京新闻综合,http://49.84.70.128:15140/南京/南京新闻综合?cors
+江苏体育休闲,http://49.84.70.128:15140/江苏/江苏体育休闲?cors
+南京文旅记录,http://49.84.70.128:15140/南京/南京文旅记录?cors
+南京十八,http://49.84.70.128:15140/南京/南京十八?cors
+南京影视,http://49.84.70.128:15140/南京/南京影视?cors
+高淳新闻,http://49.84.70.128:15140/南京/高淳新闻?cors
+南通1,http://49.84.70.128:15140/南通/南通1?cors
+南通2,http://49.84.70.128:15140/南通/南通2?cors
+南通3,http://49.84.70.128:15140/南通/南通3?cors
+苏州5,http://49.84.70.128:15140/苏州/苏州5?cors
+常州综合,http://49.84.70.128:15140/常州/常州综合?cors
+常州都市,http://49.84.70.128:15140/常州/常州都市?cors
+常州生活,http://49.84.70.128:15140/常州/常州生活?cors
+常州公共,http://49.84.70.128:15140/常州/常州公共?cors
+优漫卡通,http://49.84.70.128:15140/江苏/优漫卡通?cors
+江苏教育,http://49.84.70.128:15140/江苏/江苏教育?cors
+江苏城市,http://49.84.70.128:15140/江苏/江苏城市?cors
+江苏影视,http://49.84.70.128:15140/江苏/江苏影视?cors
+江苏新闻,http://49.84.70.128:15140/江苏/江苏新闻?cors
+江苏综艺,http://49.84.70.128:15140/江苏/江苏综艺?cors
+江苏国际,http://49.84.70.128:15140/江苏/江苏国际?cors
+淮安影视娱乐,http://49.84.70.128:15140/淮安/淮安影视娱乐?cors
+淮安综合,http://49.84.70.128:15140/淮安/淮安综合?cors
+淮安公共,http://49.84.70.128:15140/淮安/淮安公共?cors
+盐城-1,http://49.84.70.128:15140/盐城/盐城-1?cors
+邳州综合,http://49.84.70.128:15140/徐州/邳州综合?cors
+睢宁综合,http://49.84.70.128:15140/徐州/睢宁综合?cors
+沛县综合,http://49.84.70.128:15140/徐州/沛县综合?cors
+徐州1,http://49.84.70.128:15140/徐州/徐州1?cors
+徐州2,http://49.84.70.128:15140/徐州/徐州2?cors
+徐州3,http://49.84.70.128:15140/徐州/徐州3?cors
+新沂1,http://49.84.70.128:15140/徐州/新沂1?cors
