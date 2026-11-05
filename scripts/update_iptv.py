@@ -14,6 +14,8 @@ SOURCES = (
     "https://raw.githubusercontent.com/akiralereal/iptv/refs/heads/main/IPTV-overseas.m3u",
     "https://raw.githubusercontent.com/vbskycn/iptv/refs/heads/master/tv/iptv4.m3u",
     "https://raw.githubusercontent.com/YanG-1989/m3u/refs/heads/main/Migu.m3u",
+    "https://raw.githubusercontent.com/jingjingge-art/tvmalay/refs/heads/main/8tv.txt",
+    "https://raw.githubusercontent.com/jingjingge-art/youtube/refs/heads/main/%E6%B1%9F%E8%8B%8F%E9%A2%91%E9%81%93.txt",
 )
 OUTPUT = Path(__file__).resolve().parents[1] / "iptv.txt"
 GROUP_RE = re.compile(r'''(?:^|\s)group-title\s*=\s*(["'])(.*?)\1''', re.IGNORECASE)
