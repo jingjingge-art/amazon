@@ -18,16 +18,29 @@ SOURCES = (
     "https://raw.githubusercontent.com/jingjingge-art/youtube/refs/heads/main/%E6%B1%9F%E8%8B%8F%E9%A2%91%E9%81%93.txt",
 )
 OUTPUT = Path(__file__).resolve().parents[1] / "iptv.txt"
-GROUP_RE = re.compile(r'''(?:^|\s)group-title\s*=\s*(["'])(.*?)\1''', re.IGNORECASE)
+GROUP_RE = re.compile(
+    r'''(?:^|\s)group-title\s*=\s*(?:"([^"]*)"|'([^']*)'|([^,\s]*))''',
+    re.IGNORECASE,
+)
+GENERIC_GROUPS = {"iptv", "playlist", "频道列表"}
 
 
 def clean_field(value: str) -> str:
-    return " ".join(value.replace(",", "，").split())
+    """Normalize a text field for the comma-separated output format."""
+    return " ".join(value.replace(",", "，").replace("\r", " ").replace("\n", " ").split())
 
 
-def parse_playlist(text: str):
+def normalize_category(value: str, default_category: str) -> str:
+    category = clean_field(value).strip()
+    if not category or category.casefold() in GENERIC_GROUPS:
+        return clean_field(default_category) or "未分类"
+    return category
+
+
+def parse_playlist(text: str, default_category: str = "未分类"):
     """Yield (category, channel, URL) from M3U or name,URL text playlists."""
-    category = "未分类"
+    default_category = clean_field(default_category) or "未分类"
+    category = default_category
     pending = None
 
     for raw_line in text.splitlines():
@@ -38,15 +51,19 @@ def parse_playlist(text: str):
         if line.startswith("#EXTINF:"):
             metadata, separator, name = line.partition(",")
             match = GROUP_RE.search(metadata)
-            item_category = clean_field(match.group(2)) if match else "未分类"
+            group = next((part for part in match.groups() if part is not None), "") if match else ""
+            item_category = normalize_category(group, default_category)
             pending = (
-                item_category or "未分类",
-                clean_field(name) if separator else "未命名频道",
+                item_category,
+                clean_field(name) if separator and clean_field(name) else "未命名频道",
             )
             continue
 
-        # Other M3U directives and playlist headers are not channel entries.
+        # Playlist directives (e.g. #EXTVLCOPT) are allowed between EXTINF and URL.
         if line.startswith("#"):
+            if line.lower().endswith(",#genre#"):
+                group_name = line[:-len(",#genre#")].lstrip("#").strip()
+                category = normalize_category(group_name, default_category)
             continue
 
         # In M3U, an #EXTINF record is followed by its URL on the next line.
@@ -56,17 +73,25 @@ def parse_playlist(text: str):
             pending = None
             continue
 
-        # Also accept common IPTV text lines: channel name,URL. A #genre#
-        # line changes the category for subsequent entries in that source.
+        # Plain IPTV text: channel name,URL. A #genre# row starts a group.
         name, separator, value = line.partition(",")
         if not separator:
             continue
         name = clean_field(name)
         value = value.strip()
-        if value.lower() == "#genre#":
-            category = name or "未分类"
+        if value.casefold() == "#genre#":
+            category = normalize_category(name, default_category)
         elif name and value.startswith(("http://", "https://")):
             yield category, name, value
+
+
+def default_category_for_source(source: str) -> str:
+    """Use readable source-specific groups when a list only says 'iptv'."""
+    if "/8tv.txt" in source:
+        return "马来西亚频道"
+    if "youtube/refs/heads/main/" in source:
+        return "江苏频道"
+    return "未分类"
 
 
 def fetch(url: str) -> str:
@@ -77,20 +102,35 @@ def fetch(url: str) -> str:
 
 def main() -> int:
     categories = OrderedDict()
+    category_keys = {}
+    seen_urls = set()
     succeeded = 0
+
     for source in SOURCES:
         try:
             text = fetch(source)
-            records = list(parse_playlist(text))
+            records = list(parse_playlist(text, default_category_for_source(source)))
             succeeded += 1
+            added = 0
             for category, name, url in records:
-                categories.setdefault(category, []).append((name, url))
-            print(f"Loaded {len(records)} channels from {source}")
+                # Deduplicate exact stream URLs across sources, preserving the first occurrence.
+                if url in seen_urls:
+                    continue
+                seen_urls.add(url)
+                key = clean_field(category).casefold()
+                display_category = category_keys.setdefault(key, clean_field(category) or "未分类")
+                categories.setdefault(display_category, []).append((name, url))
+                added += 1
+            print(f"Loaded {len(records)} channels ({added} new) from {source}")
         except (URLError, TimeoutError, OSError, ValueError) as error:
             print(f"Warning: could not load {source}: {error}", file=sys.stderr)
 
+    channel_count = sum(map(len, categories.values()))
     if succeeded == 0:
         print("All playlist sources failed; keeping the existing iptv.txt unchanged.", file=sys.stderr)
+        return 1
+    if channel_count == 0:
+        print("No valid channels were parsed; keeping the existing iptv.txt unchanged.", file=sys.stderr)
         return 1
 
     date = datetime.now(timezone.utc).date().isoformat()
@@ -100,7 +140,7 @@ def main() -> int:
         lines.extend(f"{name},{url}" for name, url in channels)
 
     OUTPUT.write_text("\n".join(lines) + "\n", encoding="utf-8")
-    print(f"Wrote {sum(map(len, categories.values()))} channels in {len(categories)} categories to {OUTPUT}")
+    print(f"Wrote {channel_count} channels in {len(categories)} categories to {OUTPUT}")
     return 0
 
 
