@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Fetch M3U playlists and export them as a categorized iptv.txt file."""
+"""Fetch M3U or comma-separated playlists and export iptv.txt."""
 
 from collections import OrderedDict
 from datetime import datetime, timezone
@@ -26,18 +26,47 @@ def clean_field(value: str) -> str:
 
 
 def parse_playlist(text: str):
+    """Yield (category, channel, URL) from M3U or name,URL text playlists."""
+    category = "未分类"
     pending = None
+
     for raw_line in text.splitlines():
         line = raw_line.strip()
+        if not line:
+            continue
+
         if line.startswith("#EXTINF:"):
             metadata, separator, name = line.partition(",")
             match = GROUP_RE.search(metadata)
-            category = clean_field(match.group(2)) if match else "未分类"
-            pending = (category or "未分类", clean_field(name) if separator else "未命名频道")
-        elif line and not line.startswith("#") and pending:
+            item_category = clean_field(match.group(2)) if match else "未分类"
+            pending = (
+                item_category or "未分类",
+                clean_field(name) if separator else "未命名频道",
+            )
+            continue
+
+        # Other M3U directives and playlist headers are not channel entries.
+        if line.startswith("#"):
+            continue
+
+        # In M3U, an #EXTINF record is followed by its URL on the next line.
+        if pending:
             if line.startswith(("http://", "https://")):
                 yield pending[0], pending[1], line
             pending = None
+            continue
+
+        # Also accept common IPTV text lines: channel name,URL. A #genre#
+        # line changes the category for subsequent entries in that source.
+        name, separator, value = line.partition(",")
+        if not separator:
+            continue
+        name = clean_field(name)
+        value = value.strip()
+        if value.lower() == "#genre#":
+            category = name or "未分类"
+        elif name and value.startswith(("http://", "https://")):
+            yield category, name, value
 
 
 def fetch(url: str) -> str:
