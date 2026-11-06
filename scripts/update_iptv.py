@@ -17,6 +17,16 @@ SOURCES = (
     "https://raw.githubusercontent.com/jingjingge-art/tvmalay/refs/heads/main/8tv.txt",
     "https://raw.githubusercontent.com/jingjingge-art/youtube/refs/heads/main/%E6%B1%9F%E8%8B%8F%E9%A2%91%E9%81%93.txt",
     "https://live.yang-1989.eu.org/Live.m3u",
+    "https://www.apsattv.com/vizio.m3u",
+    "https://www.apsattv.com/localnow.m3u",
+    "https://www.apsattv.com/lg.m3u",
+    "https://www.apsattv.com/tablo.m3u",
+    "https://www.apsattv.com/xiaomi.m3u",
+    "https://www.apsattv.com/firetv.m3u",
+    "https://www.apsattv.com/xumo.m3u",
+    "https://www.apsattv.com/rok.m3u",
+    "https://www.apsattv.com/distro.m3u",
+    "https://iptv-org.github.io/iptv/index.m3u",
 )
 OUTPUT = Path(__file__).resolve().parents[1] / "iptv.txt"
 GROUP_RE = re.compile(
