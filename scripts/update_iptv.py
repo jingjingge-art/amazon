@@ -27,6 +27,9 @@ SOURCES = (
     "https://www.apsattv.com/rok.m3u",
     "https://www.apsattv.com/distro.m3u",
     "https://iptv-org.github.io/iptv/index.m3u",
+    "https://raw.githubusercontent.com/iptv-org/iptv/refs/heads/master/streams/cn.m3u",
+    "https://raw.githubusercontent.com/iptv-org/iptv/refs/heads/master/streams/my.m3u",
+    "https://raw.githubusercontent.com/iptv-org/iptv/refs/heads/master/streams/tw.m3u",
 )
 OUTPUT = Path(__file__).resolve().parents[1] / "iptv.txt"
 GROUP_RE = re.compile(
