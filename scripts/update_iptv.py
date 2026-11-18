@@ -30,6 +30,7 @@ SOURCES = (
     "https://raw.githubusercontent.com/iptv-org/iptv/refs/heads/master/streams/cn.m3u",
     "https://raw.githubusercontent.com/iptv-org/iptv/refs/heads/master/streams/my.m3u",
     "https://raw.githubusercontent.com/iptv-org/iptv/refs/heads/master/streams/tw.m3u",
+    "https://raw.githubusercontent.com/jingjingge-art/amazon/refs/heads/main/%E5%8F%B0%E5%8C%97%E4%91%9E%E8%B5%B7%E6%9D%A5.m3u",
 )
 OUTPUT = Path(__file__).resolve().parents[1] / "iptv.txt"
 GROUP_RE = re.compile(
