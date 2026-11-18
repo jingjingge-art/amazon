@@ -1,0 +1,215 @@
+#EXTM3U x-tvg-url="https://epg.pw/xmltv/epg_TW.xml"
+
+# ===== 无线五台 =====
+#EXTINF:-1 tvg-id="370141" tvg-name="中視" group-title="台灣-無線",中視
+http://1.170.136.51:8022/udp/224.1.4.10:11111
+#EXTINF:-1 tvg-id="370141" tvg-name="中視" group-title="台灣-無線",中視(備)
+http://1.170.136.51:8022/udp/230.1.2.228:11111
+
+#EXTINF:-1 tvg-id="370143" tvg-name="華視" group-title="台灣-無線",華視
+http://1.170.136.51:8022/udp/224.1.4.12:11111
+#EXTINF:-1 tvg-id="370143" tvg-name="華視" group-title="台灣-無線",華視(備)
+http://1.170.136.51:8022/udp/230.1.2.229:11111
+
+#EXTINF:-1 tvg-id="" tvg-name="台視" group-title="台灣-無線",台視
+http://1.170.136.51:8022/udp/224.1.4.8:11111
+#EXTINF:-1 tvg-id="" tvg-name="台視" group-title="台灣-無線",台視(備)
+http://1.170.136.51:8022/udp/230.1.2.227:11111
+
+#EXTINF:-1 tvg-id="" tvg-name="民視" group-title="台灣-無線",民視
+http://1.170.136.51:8022/udp/224.1.4.6:11111
+#EXTINF:-1 tvg-id="" tvg-name="民視" group-title="台灣-無線",民視(備)
+http://1.170.136.51:8022/udp/230.1.2.226:11111
+
+#EXTINF:-1 tvg-id="" tvg-name="公視" group-title="台灣-無線",公視
+http://1.170.136.51:8022/udp/224.1.4.53:11111
+#EXTINF:-1 tvg-id="" tvg-name="公視" group-title="台灣-無線",公視(備)
+http://1.170.136.51:8022/udp/230.1.2.230:11111
+
+# ===== 新闻台 =====
+#EXTINF:-1 tvg-id="370176" tvg-name="中視新聞" group-title="台灣-新聞",中視新聞台
+http://1.170.136.51:8022/udp/224.1.4.252:11111
+#EXTINF:-1 tvg-id="370176" tvg-name="中視新聞" group-title="台灣-新聞",中視新聞台(備)
+http://1.170.136.51:8022/udp/224.1.4.50:11111
+
+#EXTINF:-1 tvg-id="492811" tvg-name="TVBS新聞" group-title="台灣-新聞",TVBS新聞台
+http://1.170.136.51:8022/udp/224.1.4.13:11111
+#EXTINF:-1 tvg-id="492811" tvg-name="TVBS新聞" group-title="台灣-新聞",TVBS新聞台(備)
+http://1.170.136.51:8022/udp/224.1.4.152:11111
+
+#EXTINF:-1 tvg-id="456553" tvg-name="民視新聞" group-title="台灣-新聞",民視新聞台
+http://1.170.136.51:8022/udp/224.1.4.97:11111
+#EXTINF:-1 tvg-id="456553" tvg-name="民視新聞" group-title="台灣-新聞",民視新聞台(備)
+http://1.170.136.51:8022/udp/230.1.2.155:11111
+
+#EXTINF:-1 tvg-id="" tvg-name="台視新聞" group-title="台灣-新聞",台視新聞台
+http://1.170.136.51:8022/udp/224.1.4.215:11111
+#EXTINF:-1 tvg-id="" tvg-name="台視新聞" group-title="台灣-新聞",台視新聞台(備)
+http://1.170.136.51:8022/udp/230.1.2.99:11111
+
+#EXTINF:-1 tvg-id="" tvg-name="華視新聞資訊台" group-title="台灣-新聞",華視新聞資訊台
+http://1.170.136.51:8022/udp/224.1.4.55:11111
+#EXTINF:-1 tvg-id="" tvg-name="華視新聞資訊台" group-title="台灣-新聞",華視新聞資訊台(備)
+http://1.170.136.51:8022/udp/230.1.2.248:11111
+
+#EXTINF:-1 tvg-id="" tvg-name="TVBS" group-title="台灣-新聞",TVBS
+http://1.170.136.51:8022/udp/224.1.4.153:11111
+#EXTINF:-1 tvg-id="" tvg-name="TVBS歡樂" group-title="台灣-綜合",TVBS歡樂台
+http://1.170.136.51:8022/udp/224.1.4.154:11111
+#EXTINF:-1 tvg-id="" tvg-name="TVBS精采" group-title="台灣-綜合",TVBS精采台
+http://1.170.136.51:8022/udp/230.1.2.225:11111
+
+#EXTINF:-1 tvg-id="" tvg-name="非凡新聞" group-title="台灣-新聞",非凡新聞台
+http://1.170.136.51:8022/udp/224.1.4.158:11111
+#EXTINF:-1 tvg-id="" tvg-name="三立財經新聞" group-title="台灣-新聞",三立財經新聞台
+http://1.170.136.51:8022/udp/230.1.2.191:11111
+#EXTINF:-1 tvg-id="" tvg-name="三立新聞" group-title="台灣-新聞",三立新聞(映射用)
+http://1.170.136.51:8022/udp/230.1.2.21:11111
+
+#EXTINF:-1 tvg-id="" tvg-name="CNN International" group-title="國際新聞",CNN International
+http://1.170.136.51:8022/udp/224.1.4.235:11111
+#EXTINF:-1 tvg-id="" tvg-name="BBC World News" group-title="國際新聞",BBC World News
+http://1.170.136.51:8022/udp/224.1.4.52:11111
+#EXTINF:-1 tvg-id="" tvg-name="Channel NewsAsia" group-title="國際新聞",Channel NewsAsia
+http://1.170.136.51:8022/udp/224.1.4.139:11111
+#EXTINF:-1 tvg-id="" tvg-name="Bloomberg TV" group-title="國際新聞",Bloomberg TV
+http://1.170.136.51:8022/udp/224.1.4.197:11111
+#EXTINF:-1 tvg-id="" tvg-name="Al Jazeera English" group-title="國際新聞",半島英語新聞台
+http://1.170.136.51:8022/udp/230.1.2.128:11111
+#EXTINF:-1 tvg-id="" tvg-name="France24 English" group-title="國際新聞",FRANCE24(English)
+http://1.170.136.51:8022/udp/224.1.4.166:11111
+#EXTINF:-1 tvg-id="" tvg-name="Deutsche Welle" group-title="國際新聞",德國之聲電視台
+http://1.170.136.51:8022/udp/224.1.4.120:11111
+#EXTINF:-1 tvg-id="" tvg-name="Euronews" group-title="國際新聞",Euronews
+http://1.170.136.51:8022/udp/224.1.4.119:11111
+#EXTINF:-1 tvg-id="" tvg-name="NHK" group-title="國際新聞",NHK新聞資訊台
+http://1.170.136.51:8022/udp/224.1.4.137:11111
+#EXTINF:-1 tvg-id="" tvg-name="TaiwanPlus" group-title="其他",TaiwanPlus
+http://1.170.136.51:8022/udp/230.1.2.210:11111
+
+# ===== 戏剧/综合 =====
+#EXTINF:-1 tvg-id="370185" tvg-name="民視綜藝台" group-title="台灣-綜合",民視第一台
+http://1.170.136.51:8022/udp/224.1.4.218:11111
+#EXTINF:-1 tvg-id="370185" tvg-name="民視綜藝台" group-title="台灣-綜合",民視第一台(備)
+http://1.170.136.51:8022/udp/224.1.4.77:11111
+
+#EXTINF:-1 tvg-id="" tvg-name="台視綜合" group-title="台灣-綜合",台視綜合台
+http://1.170.136.51:8022/udp/224.1.4.170:11111
+#EXTINF:-1 tvg-id="" tvg-name="中視經典" group-title="台灣-綜合",中視經典台
+http://1.170.136.51:8022/udp/224.1.4.219:11111
+#EXTINF:-1 tvg-id="" tvg-name="中視菁采" group-title="台灣-綜合",中視菁采台
+http://1.170.136.51:8022/udp/230.1.2.224:11111
+#EXTINF:-1 tvg-id="" tvg-name="民視台灣台" group-title="台灣-綜合",民視台灣台
+http://1.170.136.51:8022/udp/224.1.4.227:11111
+#EXTINF:-1 tvg-id="" tvg-name="三立戲劇" group-title="台灣-綜合",三立戲劇台
+http://1.170.136.51:8022/udp/230.1.2.232:11111
+#EXTINF:-1 tvg-id="" tvg-name="三立綜合" group-title="台灣-綜合",三立綜合台
+http://1.170.136.51:8022/udp/230.1.2.192:11111
+#EXTINF:-1 tvg-id="" tvg-name="龍華戲劇" group-title="台灣-綜合",龍華戲劇
+http://1.170.136.51:8022/udp/224.1.4.41:11111
+#EXTINF:-1 tvg-id="" tvg-name="龍華偶像" group-title="台灣-綜合",龍華偶像
+http://1.170.136.51:8022/udp/224.1.4.39:11111
+#EXTINF:-1 tvg-id="" tvg-name="龍華經典" group-title="台灣-綜合",龍華經典
+http://1.170.136.51:8022/udp/224.1.4.172:11111
+#EXTINF:-1 tvg-id="" tvg-name="華藝影劇" group-title="台灣-綜合",華藝影劇台
+http://1.170.136.51:8022/udp/230.1.2.17:11111
+#EXTINF:-1 tvg-id="" tvg-name="華藝綜合" group-title="台灣-綜合",華藝MBC綜合台
+http://1.170.136.51:8022/udp/224.1.4.130:11111
+#EXTINF:-1 tvg-id="" tvg-name="EYE戲劇" group-title="台灣-綜合",EYE TV戲劇台
+http://1.170.136.51:8022/udp/224.1.4.60:11111
+
+# ===== 电影/娱乐 =====
+#EXTINF:-1 tvg-id="" tvg-name="AMC" group-title="電影-娛樂",amc電影台
+http://1.170.136.51:8022/udp/224.1.4.43:11111
+#EXTINF:-1 tvg-id="" tvg-name="CinemaWorld" group-title="電影-娛樂",CinemaWorld
+http://1.170.136.51:8022/udp/230.1.2.201:11111
+#EXTINF:-1 tvg-id="" tvg-name="CatchPlay" group-title="電影-娛樂",CatchPlay電影台
+http://1.170.136.51:8022/udp/230.1.2.217:11111
+#EXTINF:-1 tvg-id="" tvg-name="Warner TV" group-title="電影-娛樂",Warner TV
+http://1.170.136.51:8022/udp/224.1.4.234:11111
+#EXTINF:-1 tvg-id="" tvg-name="ROCK Entertainment" group-title="電影-娛樂",ROCK Entertainment
+http://1.170.136.51:8022/udp/224.1.4.131:11111
+#EXTINF:-1 tvg-id="" tvg-name="tvN" group-title="電影-娛樂",tvN
+http://1.170.136.51:8022/udp/224.1.4.111:11111
+#EXTINF:-1 tvg-id="" tvg-name="MTV Live" group-title="音樂",MTV Live
+http://1.170.136.51:8022/udp/230.1.2.246:11111
+#EXTINF:-1 tvg-id="" tvg-name="CMusic" group-title="音樂",CMusic
+http://1.170.136.51:8022/udp/224.1.4.159:11111
+#EXTINF:-1 tvg-id="" tvg-name="Mezzo Live" group-title="音樂",Mezzo Live HD
+http://1.170.136.51:8022/udp/224.1.4.240:11111
+
+# ===== 国际/纪实 =====
+#EXTINF:-1 tvg-id="" tvg-name="Discovery Asia" group-title="國際-紀錄",Discovery Asia
+http://1.170.136.51:8022/udp/230.1.2.168:11111
+#EXTINF:-1 tvg-id="" tvg-name="Discovery Science" group-title="國際-紀錄",Discovery科學頻道
+http://1.170.136.51:8022/udp/230.1.2.12:11111
+#EXTINF:-1 tvg-id="" tvg-name="BBC Earth" group-title="國際-紀錄",BBC Earth
+http://1.170.136.51:8022/udp/230.1.2.172:11111
+#EXTINF:-1 tvg-id="" tvg-name="BBC Lifestyle" group-title="國際-紀錄",BBC Lifestyle
+http://1.170.136.51:8022/udp/230.1.2.10:11111
+#EXTINF:-1 tvg-id="" tvg-name="History" group-title="國際-紀錄",歷史頻道
+http://1.170.136.51:8022/udp/230.1.2.216:11111
+#EXTINF:-1 tvg-id="" tvg-name="DMAX" group-title="國際-紀錄",DMAX
+http://1.170.136.51:8022/udp/230.1.2.13:11111
+#EXTINF:-1 tvg-id="" tvg-name="Love Nature" group-title="國際-紀錄",Love Nature
+http://1.170.136.51:8022/udp/224.1.4.182:11111
+
+# ===== 动漫/儿童 =====
+#EXTINF:-1 tvg-id="" tvg-name="Animax" group-title="動漫-兒童",Animax
+http://1.170.136.51:8022/udp/224.1.4.237:11111
+#EXTINF:-1 tvg-id="" tvg-name="Cartoonito" group-title="動漫-兒童",CARTOONITO
+http://1.170.136.51:8022/udp/224.1.4.15:11111
+#EXTINF:-1 tvg-id="" tvg-name="Nickelodeon" group-title="動漫-兒童",Nickelodeon Asia
+http://1.170.136.51:8022/udp/224.1.4.249:11111
+#EXTINF:-1 tvg-id="" tvg-name="Nick Jr." group-title="動漫-兒童",Nick Jr.
+http://1.170.136.51:8022/udp/224.1.4.179:11111
+#EXTINF:-1 tvg-id="" tvg-name="CBeebies" group-title="動漫-兒童",CBeebies
+http://1.170.136.51:8022/udp/224.1.4.213:11111
+#EXTINF:-1 tvg-id="" tvg-name="DreamWorks" group-title="動漫-兒童",DreamWorks
+http://1.170.136.51:8022/udp/224.1.4.121:11111
+#EXTINF:-1 tvg-id="" tvg-name="i-Fun" group-title="動漫-兒童",i-Fun動漫台
+http://1.170.136.51:8022/udp/230.1.2.223:11111
+#EXTINF:-1 tvg-id="" tvg-name="曼迪日本" group-title="動漫-兒童",曼迪日本台
+http://1.170.136.51:8022/udp/230.1.2.242:11111
+
+# ===== 体育 =====
+#EXTINF:-1 tvg-id="" tvg-name="Eleven Sports" group-title="體育",ELEVEN SPORTS PLUS
+http://1.170.136.51:8022/udp/224.1.4.115:11111
+#EXTINF:-1 tvg-id="" tvg-name="Eleven Sports 2" group-title="體育",ELEVEN SPORTS 2
+http://1.170.136.51:8022/udp/224.1.4.156:11111
+#EXTINF:-1 tvg-id="" tvg-name="Eurosport" group-title="體育",EUROSPORT
+http://1.170.136.51:8022/udp/224.1.4.135:11111
+#EXTINF:-1 tvg-id="" tvg-name="Boss Sports 1" group-title="體育",博斯運動一台
+http://1.170.136.51:8022/udp/224.1.4.48:11111
+#EXTINF:-1 tvg-id="" tvg-name="Boss Golf 1" group-title="體育",博斯高球一台
+http://1.170.136.51:8022/udp/224.1.4.49:11111
+#EXTINF:-1 tvg-id="" tvg-name="Boss Tennis" group-title="體育",博斯網球台
+http://1.170.136.51:8022/udp/224.1.4.66:11111
+#EXTINF:-1 tvg-id="" tvg-name="ELTA Sports 1" group-title="體育",愛爾達體育1台
+http://1.170.136.51:8022/udp/224.1.4.112:11111
+#EXTINF:-1 tvg-id="" tvg-name="NBA" group-title="體育",NBA動態
+http://1.170.136.51:8022/udp/224.1.4.144:11111
+
+# ===== 生活/其他 =====
+#EXTINF:-1 tvg-id="" tvg-name="Food Network" group-title="生活",Food Network
+http://1.170.136.51:8022/udp/224.1.4.211:11111
+#EXTINF:-1 tvg-id="" tvg-name="Asian Food Network" group-title="生活",Asian Food Network
+http://1.170.136.51:8022/udp/230.1.2.233:11111
+#EXTINF:-1 tvg-id="" tvg-name="HGTV" group-title="生活",HGTV 居家樂活
+http://1.170.136.51:8022/udp/224.1.4.183:11111
+#EXTINF:-1 tvg-id="" tvg-name="Travel Channel" group-title="生活",Travel Channel
+http://1.170.136.51:8022/udp/230.1.2.166:11111
+#EXTINF:-1 tvg-id="" tvg-name="大愛電視" group-title="其他",大愛電視
+http://1.170.136.51:8022/udp/224.1.4.54:11111
+#EXTINF:-1 tvg-id="" tvg-name="人間衛視" group-title="其他",人間衛視
+http://1.170.136.51:8022/udp/224.1.4.89:11111
+#EXTINF:-1 tvg-id="" tvg-name="客家電視" group-title="其他",客家電視
+http://1.170.136.51:8022/udp/224.1.4.17:11111
+#EXTINF:-1 tvg-id="" tvg-name="原住民族電視台" group-title="其他",原住民族電視台
+http://1.170.136.51:8022/udp/224.1.4.76:11111
+#EXTINF:-1 tvg-id="" tvg-name="公視台語台" group-title="台灣-無線",公視台語台
+http://1.170.136.51:8022/udp/230.1.2.31:11111
+#EXTINF:-1 tvg-id="" tvg-name="公視2台" group-title="台灣-無線",公視2台
+http://1.170.136.51:8022/udp/230.1.2.185:11111
+#EXTINF:-1 tvg-id="" tvg-name="公視3台" group-title="台灣-無線",公視3台
+http://1.170.136.51:8022/udp/224.1.4.228:11111
